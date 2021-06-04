@@ -20,7 +20,7 @@ function toInstacart() {
   url = "https://www.instacart.com/store/partner_recipe?title=Grocery+List";
   ingredient_parameter = "&ingredients%5B%5D=";
 
-  lines = document.getElementById("groceries").innerHTML.trim().split(/\r?\n/);
+  lines = document.getElementById("groceries").value.trim().split(/\r?\n/);
   url += ingredient_parameter;
   url += lines.join(ingredient_parameter);
   
