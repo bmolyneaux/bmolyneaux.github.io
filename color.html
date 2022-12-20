@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+	function changeBackground() {
+      const params = new URLSearchParams(window.location.search);
+      const hex = params.get('hex');
+
+      if (hex) {
+        document.body.style.backgroundColor = "#" + hex;
+      }
+    }
+
+    window.addEventListener("load", function() { changeBackground() });
+  </script>
+</head>
+<body>
+</body>
+</html>
